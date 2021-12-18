@@ -1,0 +1,27 @@
+<%- include("partials/header"); -%>
+
+				<div class="margin">
+
+
+					<% courses.forEach(function(course){ %>
+
+							<form id="form-id" action="/titlen" method="post">
+							
+								<div class="jumbotron jumbotron-fluid container">
+									
+			  						<h2 class="display-4 aa" style="font-family:verdana"><b>title:</b> <%=course.title%></h2>
+			  						<p class="lead aa" style="font-family:verdana"><b>instructor:</b> <%=course.instructor%></p>
+			  						<p class="lead aa" style="font-family:verdana"><%=course.price%></p>
+
+			  						<input type="hidden" name="titleName" value="<%=course.title%>">
+
+			  					</div>							
+
+		  					</form>
+					
+					<% }) %>
+					
+
+				</div>
+			
+<%- include('partials/footer'); -%>

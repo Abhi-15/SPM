@@ -1,0 +1,29 @@
+<%- include("partials/header"); -%>
+
+    		<div class="container margin">
+				<form action="/add" method="post">
+				  <div>
+				  	<label style="margin-top: 20px; width: 100%">Course Title:</label>
+				  	<input style="width: 100%"type="text" name="title" autocomplete="off">
+				  </div>	  
+				  <div>
+				  	<label style="margin-top: 20px; width: 100%">Instructor: </label>
+				  	<input style="width: 100%"type="text" name="instructor" autocomplete="off">
+				  </div>
+				  <div>
+				  	<label style="margin-top: 20px; width: 100%">Price: </label>
+				  	<input style="width: 100%"type="text" name="price" autocomplete="off">
+				  </div>
+
+				  <div>
+				  	<label style="margin-top: 20px; width: 100%">Link: </label>
+				  	<input style="width: 100%"type="text" name="link" autocomplete="off">
+				  </div>
+
+				  <div style="width: 100%">
+				  	<button style="margin-top: 20px; border: none; background: none; margin-left: 45%; margin-right: 45%;" type="submit"> <span class="glyphicon glyphicon-plus"></button>
+				  </div>
+				</form>
+			</div>
+
+<%- include('partials/footer'); -%>

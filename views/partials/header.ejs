@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Learning Platform</title>
+
+<body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="https://use.fontawesome.com/02cfcb3bc4.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container" class="margin">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">LearnHub</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-nav-demo">
+                <form action="/search" method="post" class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" autocomplete="off" class="form-control" name="search_item" placeholder="Search courses">
+                    </div>
+                </form>
+
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li><a href="delete"><span class="glyphicon glyphicon-minus"></a></li>
+                    <li><a href="add"><span class="glyphicon glyphicon-plus"></a></li>
+
+                    <% if(isLoggedIn === "false"){ %>
+                        <li><a href="login">Login <i class="fa fa-user" aria-hidden="true"></i></a></li>
+                    <% } else {%>
+                        <li><a href="logout">Logout </a></li>
+                    <% } %>
+
+                    <li><a href="register">Signup<i class="fa fa-user-plus" aria-hidden="true"></i></a></li>
+                    <!-- <li><a href="update"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                 

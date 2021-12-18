@@ -1,0 +1,24 @@
+<%- include("partials/header"); -%>
+
+			  	<form action="/payment" method="post">
+				
+					<div class="margin">
+
+						<div class="jumbotron jumbotron-fluid container">
+				  			<h2 class="display-4 aa" style="font-family:verdana"><b>title: </b><%=course.title%></h2>
+				  			<p class="lead aa" style="font-family:verdana"><b>instructor:</b> <%=course.instructor%></p>
+				  			<p class="lead aa" style="font-family:verdana"><%=course.price%></p>
+
+							<% if(registered === "false"){ %>
+		                        <button type="submit" name="title" value="<%=course.title%>"> <span class="glyphicon glyphicon-plus"></button>
+		                    <% } else {%>
+		                        <a style="padding-left: 20px" href="<%=course.link%>" style="font-family:verdana">link to course!!</a>
+		                    <% } %>
+			
+				  		</div>
+					
+					</div>
+
+				</form>	
+
+<%- include('partials/footer'); -%>
